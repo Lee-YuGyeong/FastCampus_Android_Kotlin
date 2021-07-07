@@ -8,8 +8,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.FastCampus_Android_Kotlin"
-        android:name=".AopPart5Chapter01Application">
+        android:theme="@style/Theme.FastCampus_Android_Kotlin">
+        <activity android:name=".ResultActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
