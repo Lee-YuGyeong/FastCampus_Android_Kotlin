@@ -11,6 +11,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/BMI" />
+            <option value="$PROJECT_DIR$/Diary" />
             <option value="$PROJECT_DIR$/Lotto" />
             <option value="$PROJECT_DIR$/ToDo" />
           </set>

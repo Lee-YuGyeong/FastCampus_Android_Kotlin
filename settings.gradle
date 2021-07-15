@@ -2,3 +2,4 @@ rootProject.name = "FastCampus_Android_Kotlin"
 include ':ToDo'
 include ':BMI'
 include ':Lotto'
+include ':Diary'
