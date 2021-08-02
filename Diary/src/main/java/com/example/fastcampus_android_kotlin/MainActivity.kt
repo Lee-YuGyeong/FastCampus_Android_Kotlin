@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() {
                 "${numberPicker1.value}${numberPicker2.value}${numberPicker3.value}"
 
             if (passwordPreferences.getString("password", "000").equals(passwordFromUser)) {
-
+                startActivity(Intent(this, DiaryActivity::class.java))
 
             } else {
 

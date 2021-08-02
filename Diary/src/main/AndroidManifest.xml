@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FastCampus_Android_Kotlin">
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".DiaryActivity"
+            android:theme="@style/Theme.FastCampus_Android_Kotlin.NoActionBar"></activity>
+        <activity
+            android:name=".MainActivity"
             android:theme="@style/Theme.FastCampus_Android_Kotlin.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
