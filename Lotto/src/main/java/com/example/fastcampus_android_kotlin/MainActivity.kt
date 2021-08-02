@@ -3,6 +3,7 @@ package com.example.fastcampus_android_kotlin
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.NumberPicker
@@ -145,5 +146,7 @@ class MainActivity : AppCompatActivity() {
         val newList = pickNumberSet.toList() + numberList.subList(0, 6 - pickNumberSet.size)
         return newList.sorted()
     }
+
+    fun buttonClicked(view: View) {}
 
 }
