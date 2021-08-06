@@ -1,6 +1,33 @@
 # FastCampus_Android_Kotlin
 FastCampus Kotlin 강의 수강
 
+## Part2 Chapter01 BMI 계산기
+###
+1. Layout 그리는 법 (LinearLayout, EditText, TextView, Button)
+
+### Kotlin 문법
+1. When 분기문
+2. 람다함수
+
+### 기능
+1. 공식 = 몸무게(kg) / {키(m) * 키(m)}
+2. 18.5 이하면 저체중, 18.5 ~ 23은 정상체중, 23 ~ 25는 과체중, 25 ~ 30은 경도 비만, 30 ~ 35는 중정도비만, 35 이상은 고도 비만
+
+## Part2 Chapter02 로또 번호 추첨기
+###
+1. Layout 그리는 법 (constraintLayout, NumberPicker, TextView, Button)
+2. Shape Drawble 사용하기
+
+### Kotlin 문법
+1. apply
+2. When
+3. Random
+4. Collection - Set,List
+5. 람다함수
+
+### 기능
+1. 0~5개까지 수동 선택 가능하도록 구현하기
+2. 수동선택한 번호를 제외한 나머지 번호는 랜덤으로 표시하기
 
 ## Part2 Chapter03 비밀 다이어리
 ###
