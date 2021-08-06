@@ -13,8 +13,10 @@
             <option value="$PROJECT_DIR$/BMI" />
             <option value="$PROJECT_DIR$/Calculator" />
             <option value="$PROJECT_DIR$/Diary" />
+            <option value="$PROJECT_DIR$/ElectronicFrame" />
             <option value="$PROJECT_DIR$/Lotto" />
             <option value="$PROJECT_DIR$/ToDo" />
+            <option value="$PROJECT_DIR$/test" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
