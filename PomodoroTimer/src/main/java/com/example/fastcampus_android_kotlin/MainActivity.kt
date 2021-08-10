@@ -39,6 +39,22 @@ class MainActivity : AppCompatActivity() {
         initSounds()
     }
 
+    override fun onResume() {
+        super.onResume()
+        soundPool.autoResume() // 모든 활성화된 사운드 resume
+    }
+
+    override fun onPause() {
+        super.onPause()
+        soundPool.autoPause() // 모든 활성화된 사운드 멈춤
+        //앱이 화면에 안보이면 사운드 일시정지
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        soundPool.release()
+    }
+
     private fun bindViews() {
         seekBar.setOnSeekBarChangeListener(
             object : SeekBar.OnSeekBarChangeListener {
@@ -61,12 +77,7 @@ class MainActivity : AppCompatActivity() {
                 override fun onStopTrackingTouch(seekBar: SeekBar?) {
                     seekBar ?: return
 
-                    currentCountDownTimer = createCountDownTimer(seekBar.progress * 60 * 1000L)
-                    currentCountDownTimer?.start()
-
-                    tickingSoundId?.let { soundId ->
-                        soundPool.play(soundId, 1F, 1F, 0, -1, 1F)
-                    }
+                    startCountDown()
                 }
             }
         )
@@ -85,10 +96,30 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onFinish() {
-                updateRemainTime(0)
-                updateSeekBar(0)
+                completeCountDown()
             }
         }
+
+    private fun startCountDown() {
+        currentCountDownTimer = createCountDownTimer(seekBar.progress * 60 * 1000L)
+        currentCountDownTimer?.start()
+
+        tickingSoundId?.let { soundId ->
+            soundPool.play(soundId, 1F, 1F, 0, -1, 1F)
+        }
+    }
+
+    private fun completeCountDown() {
+        updateRemainTime(0)
+        updateSeekBar(0)
+
+        soundPool.autoPause()
+
+        bellSoundId?.let { soundId ->
+            soundPool.play(soundId, 1F, 1F, 0, 0, 1F)
+        }
+
+    }
 
     @SuppressLint("SetTextI18n")
     private fun updateRemainTime(remainMillis: Long) {
