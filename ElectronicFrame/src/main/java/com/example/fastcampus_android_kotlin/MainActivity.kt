@@ -6,6 +6,7 @@ import android.content.pm.PackageManager
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
@@ -62,6 +63,19 @@ class MainActivity : AppCompatActivity() {
                     )
                 }
             }
+        }
+    }
+
+    private fun initStartPhotoFrameModeButton() {
+
+        startPhotoFrameModeButton.setOnClickListener {
+
+            val intent = Intent(this, PhotoFrameActivity::class.java)
+            imageUriList.forEachIndexed { index, uri ->
+                intent.putExtra("photo$index", uri.toString())
+            }
+            intent.putExtra("photoListSize", imageUriList.size)
+            startActivity(intent)
         }
     }
 
@@ -137,9 +151,5 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-
-    private fun initStartPhotoFrameModeButton() {
-
-    }
 
 }
