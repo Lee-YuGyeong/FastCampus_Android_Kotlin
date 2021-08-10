@@ -13,6 +13,12 @@ FastCampus Kotlin 강의 수강
 1. 공식 = 몸무게(kg) / {키(m) * 키(m)}
 2. 18.5 이하면 저체중, 18.5 ~ 23은 정상체중, 23 ~ 25는 과체중, 25 ~ 30은 경도 비만, 30 ~ 35는 중정도비만, 35 이상은 고도 비만
 
+## Screenshot
+<p align="center">
+<img src="https://user-images.githubusercontent.com/60072190/128840556-282c89f0-95c4-4163-97ce-746947c817e5.jpg"  width="300" height="600">
+<img src="https://user-images.githubusercontent.com/60072190/128840656-1e9adb77-fef3-4f13-a03c-5796d673f10a.jpg"  width="300" height="600">
+</p>
+
 ## Part2 Chapter02 로또 번호 추첨기
 ###
 1. Layout 그리는 법 (constraintLayout, NumberPicker, TextView, Button)
