@@ -123,3 +123,20 @@ FastCampus Kotlin 강의 수강
 <p align="center">
 <img src="https://user-images.githubusercontent.com/60072190/128841417-9ece8b3b-fba6-4ae0-be68-80dd5d5c4828.jpg"  width="300">
 </p>
+
+## Part2 Chapter08 심플 웹 브라우저
+###
+1. ConstraintLayout
+2. EditText
+3. WebView
+
+### 기능
+1. 웹사이트를 불러올 수 있음
+2. 뒤로가기, 앞으로 가기 기능이 있음
+3. 홈 버튼을 눌러 처음으로 돌아갈 수 있음
+4. 웹사이트의 로딩 정도를 확인할 수 있음
+
+### Screenshot
+<p align="center">
+<img src=""  width="300">
+</p>
