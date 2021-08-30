@@ -140,3 +140,6 @@ FastCampus Kotlin 강의 수강
 <p align="center">
 <img src=""  width="300">
 </p>
+
+## Part2 Chapter06 
+###
